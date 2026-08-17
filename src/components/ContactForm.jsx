@@ -4,7 +4,8 @@ export default function ContactForm() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        message: ''
+        message: '',
+        type: 'General Inquiry'
     });
 
     const [errors, setErrors] = useState({});
@@ -69,7 +70,7 @@ export default function ContactForm() {
         e.preventDefault();
         if (isFormValid) {
             setSuccessMessage("Thank you! Your message has been sent successfully.");
-            setFormData({ name: '', email: '', message: '' });
+            setFormData({ name: '', email: '', message: '', type: 'General Inquiry' });
             setTouched({ name: false, email: false, message: false });
             
             // Clear success message after 5 seconds
@@ -114,6 +115,22 @@ export default function ContactForm() {
                 {touched.email && errors.email && (
                     <span className="form-error" role="alert">{errors.email}</span>
                 )}
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="form-type">Category</label>
+                <select
+                    id="form-type"
+                    name="type"
+                    value={formData.type}
+                    onChange={handleChange}
+                    required
+                >
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Feedback">Feedback / Suggestions</option>
+                    <option value="Collaboration">Collaboration Proposal</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
 
             <div className="form-group">

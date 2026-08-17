@@ -541,7 +541,7 @@ section {
     color: var(--text-primary);
 }
 
-.form-group input, .form-group textarea {
+.form-group input, .form-group textarea, .form-group select {
     padding: 12px 16px;
     border-radius: 8px;
     border: 1px solid var(--border-color);
@@ -553,7 +553,7 @@ section {
     outline: none;
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
     border-color: var(--accent-color);
     box-shadow: 0 0 0 2px var(--accent-light);
 }
