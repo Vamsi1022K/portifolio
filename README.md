@@ -1,3 +1,15 @@
+# NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL
+## Department of Computer Science and Engineering
+
+* **Course Code**: CS1303
+* **Course Title**: Full Stack Development
+* **Assignment No**: 2
+* **Assignment Title**: Interactive Multi-Page Portfolio Website using React
+* **Date of Issue**: 04/08/2026
+* **Date of Submission**: 10/08/2026
+
+---
+
 # Interactive Multi-Page Portfolio Website
 
 This project is a React-based interactive portfolio built with Vite. It upgrades the static portfolio from Assignment 1 into a modular, responsive React web application utilizing functional components, state synchronization, effects, and dynamic nested routing.
